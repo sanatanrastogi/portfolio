@@ -1,230 +1,334 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title></title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style type="text/css">
-nav ul li{
-display: inline;
-margin-left: 50px;
-}
-nav ul li a{
-text-decoration: none;
-font-size: 25px;
-}
-nav{
-display: block;
-background-color: #F8F9FA;
-height: 50px;
-align-items: center;
-}
-div.main{
-height: 300px;
-width: 100%;
-}
-div div.image{
-width: 50%;
-height: inherit;
-float: left;
-text-align: center;
-}
-div div img.pp{
-border-width: 0px;
-border-radius: 50%;
-width: auto;
-height: 300px;
-text-align: center;
-align-items: center;
-}
-div div.name{
-width: 50%;
-float: left;
-height: inherit;
-}
-div div p.name1{
-color: #17a2b8;
-font-family: sans-serif;
-float: left;
-text-align: center;
-font-size: 50px;
-}
-div.EQ{
-width: 100%;
-height: auto;
-}
-div p.heading{
-width: 100%;
-font-size: 50px;
-float: left;
-text-align: center;
-}
-div div.EQ1{
-width: 25%;
-float: left;
-text-align: center;
-}
-div.MTS{
-width: 100%;
-background-color: #F8F9FA;
-height: auto;
-}
-div div.Skills{
-width: 25%;
-float: left;
-text-align: center;
-margin-bottom: 20px;
-}
-div div img.skill_image{
-width: inherit;
-}
-div div span{
-font-size: 20px;
-text-align: center;
-}
-div div span.Blue_color{
-color: blue;
-}
-div.inter{
-height: 135px;
-width: 20%;
-border-width: 0px;
-border-radius: 5%;
-box-shadow: 0px 0px 5px 1px;
-background-color: #d8d7d785;
-text-align: center;
-}
-.su{
-    height: 100px;
-    width: 100%;
-    float: left;
-    text-align: center;
-    font-size: 20px;
-}
-.center{
-    text-align: center;
-}
-footer{
-    background-color: #777777;
-    width: 100%;
-    height: 100px;
-    float: left;
-}
-.contact{
-    height: 100px;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+
+    <style>
+        .scrollbar::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-<nav>
-      <ul>
-        <li><a href="#slide01">Home</a></li>
-        <li><a href="#slide02">Skills</a></li>
-        <li><a href="#slide03">About</a></li>
-        <li><a href="#slide04">Work</a></li>
-        <li><a href="#slide05">Contact</a></li>
-      </ul>
+
+    <!--Navbar-->
+    
+    <nav class="navbar navbar-expand-sm fixed-top bg-light">
+        <div class="container my-2">
+            <a href="#" class="navbar-brand text-dark font-weight-bold">Sanatan Rastogi</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+                <span class="fas fa-bars text-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
+                <div class="navbar-nav"  >
+                  <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">Home</a>
+                  <a href="#skills" class="nav-item nav-link text-dark h6 mx-3 my-auto">Skills</a>
+                  <!-- <a href="#certifications" class="nav-item nav-link text-dark h6 mx-3 my-auto">Certifications</a> -->
+                  <a href="#about" class="nav-item nav-link text-dark h6 mx-3 my-auto">About</a>
+                  <a href="#work" class="nav-item nav-link text-dark h6 mx-3 my-auto">Work</a>
+                  <a href="#contact" class="nav-item nav-link text-dark h6 mx-3 my-auto">Contact</a>
+                </div>
+            </div>            
+        </div>
     </nav>
-    <div class="main" id="slide01">
-    <div class="image">
-    <img src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="profile_image" class="pp">
+
+    <!--Title Section-->
+
+    <div class="container">
+        <div class="row text-center align-items-center my-5 py-5">
+            <div class="col-12 col-md-6 pt-5">
+                <img class="img-fluid rounded-circle" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg" alt="Dummyimage" width="300px" height="150px">
+            </div>
+            <div class="col-12 col-md-6 pt-5">
+                <div class="font-weight-light" style="font-size: 50px;font-family: 'Trebuchet MS', sans-serif;">Hi,<br>I am <span class="text-info">Sanatan Rastogi</span></div>
+                <h4 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">A Web Developer</h4>
+            </div>
+        </div>
     </div>
-    <div class="name">
-    <p class="name1"><tt> Hi</tt>,<br><tt> I am Sanatan Rastogi</tt><br><tt>A web devloper</tt></p>
+
+    <!--Education Section-->
+    <div class="bg-white w-100 py-2 my-5">
+    <div class="container text-center my-5">
+        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info"> Education Qualifications</span></h1>
+        <div class="row my-5 pt-3" style="font-family: 'Trebuchet MS', sans-serif;font-size: 16px;">
+            <div class="col-12 col-md-4 my-2">
+                        <div><h3>Masters of Computer Applications</h3></div>
+                        <div>Jagran Institute of Management<br>
+                                               Year : 2020-2022<br>
+                                               Percentage : __%</div>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                        <div><h3>Bachelor of Computer Applications</h3></div>
+                        <div>Axis Institute of Higher Education<br>
+                                               Year : 2017-2020<br>
+                                               Percentage : 63</div>
+                
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                        <div><h3>Intermediate (XII)</h3></div>
+                        <div>Prakash Vidya Mandir<br>
+                                               Year : 2014-2015<br>
+                                               Percentage : 60</div>
+            </div>
+        </div>
     </div>
-    </div><br>
-    <!-- <div><p class="heading">Internship</p></div><br>
-    <div class="inter">
-    <h1>Web Developer</h1>
-    <h2>As Vaidik PVT LTD <br>March 2020 - May 2020</h2>
+</div>
+
+<!--Technical Skills-->
+
+<a name="skills"></a>
+<div class="bg-light w-100 mt-5">
+    <div class="container text-center py-5">
+        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info"> Technical Skills</h1>
+        <div style="font-size: 18px;">I design, develop and deliver with these weapons</div>
+
+        <div class="d-flex justify-content-around my-5 py-3">
+            <div>
+                <img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="C" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://qph.fs.quoracdn.net/main-qimg-48b7a3d8958565e7aa3ad4dbf2312770.webp" alt="java" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" alt="wordpress" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png" alt="HTML5" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around my-5 py-3">
+            <div>
+                <img class="rounded" src="https://www.vhv.rs/dpng/d/392-3923946_css3-logo-html5-and-css3-png-logo-transparent.png" alt="CSS3" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://images.squarespace-cdn.com/content/v1/5df7d8d44b9a7a49b2e475ac/1576526689110-QJM10YTHVZYU7Z7D2YLE/ke17ZwdGBToddI8pDm48kDmvgM2_GYudIur22MWWiLdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIvFa2r33EMaMk7hlBJBei4G1FTiqzsF6lpp3EXtW1YCk/js-logo.png" alt="javascript" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png" alt="bootstrap4" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://pngimg.com/uploads/mysql/mysql_PNG23.png" alt="mysql" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-around py-3">
+            <div>
+                <img class="rounded" src="https://e7.pngegg.com/pngimages/46/626/png-clipart-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template.png" alt="C++" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png" alt="Python" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://www.kindpng.com/picc/m/11-118738_php-logo-png-circle-transparent-png.png" alt="php" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+            <div>
+                <img class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Microsoft_Office_logo_%282013%E2%80%932019%29.png" alt="msoffice" width="100px" height="100px">
+                <div class="text-center">
+                    <span class="text-info">★</span>
+                    <span class="text-info">★</span>
+                    <span>★</span>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+    <!--Certification Section-->
+
+    <!-- <a name="certifications"></a>
+    <h1 class="font-weight-light text-center my-3 pt-5" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info"> Certification Courses</span></h1>
+    <div style=" font-size: 18px; text-align: center;">My knowledge accredited by certifications</div>
+    <div class="container-fluid">
+        <div class="row text-center py-5 d-flex flex-nowrap overflow-auto scrollbar">
+            <div class="col-12 col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-text" ><h4>Programming in Java</h4></div>
+                        <div class="card-text" style="font-family: 'Trebuchet MS', sans-serif;">NPTEL, Online</div>
+                        <a href="images/npteljava.jpg" class="text-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-text" ><h4>Introduction to RPA</h4></div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">Automation AnyWhere University, Online</div>
+                        <a href="images/rpa.jpg" class="text-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-text"><h4>Android App Development</h4></div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">APSSDC, Online</div>
+                        <a href="images/android.png" class="text-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-text"><h4>Introduction to IoT</h4></div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">NPTEL, Online</div>
+                        <a href="images/iot.jpeg" class="text-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <div class="card-text"><h4>Java and Python</h4></div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">Unschool, Online</div>
+                        <a href="images/Java and Python.jpg" class="text-info">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div> -->
-    <div id="slide02"><p class="heading">My Education Qualifications</p></div><br>
-    <div class="EQ">
-    <div class="EQ1">
-    <h2>Master of Computer Applications</h2>
-    <h3>2020-2022</h3>
+    <!--About me Section-->
+    <a name="about"></a>
+    <div class="bg-light my-5">
+        <div class="container text-center py-5">
+            <h1 class="font-weight-light"><span class="text-info" style="font-family: 'Trebuchet MS', sans-serif;">About </span>me</h1>
+            <div style=" font-size: 18px; text-align: center;" >What I'm, A short description about me</div>
+            <div class="row pt-5 pl-5 pr-5" style="font-family: 'Trebuchet MS', sans-serif;" >
+                <p class="text-justify">
+                    <span style="font-weight: bold;">✓ </span>  I'm <span style="font-weight: bold;">Sanatan Rastogi,</span>
+                    a Kanpur(Uttar Pradesh) native, is pursuing a master's degree in computer applications at the Jagran Institute of Management. I'm committed to my work and will maintain a high level of discipline and dedication throughout my career. I will do all in my power to complete my deliverables on time and in a productive manner. I'm a self-assured and self-motivated person. I have leadership qualities, as well as the capacity to adapt to any scenario and mingle in groups and work effectively with people.
+                </p>
+                <!-- <p class="text-justify">
+                    <span style="font-weight: bold;">✓ </span>I am a member of <span style="font-weight: bold;">
+                    Association for Computing Machinery (ACM) </span>through which I enhanced my leadership skills 
+                    and communication skills.</p> -->
+                <p class="text-justify">
+                    <span style="font-weight: bold;">✓ </span>My passion is in the field of web page design. I'm an excellent communicator who has competed in numerous inter and intra-college competitions.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="EQ1">
-    <h2>Bachelor of Computer Applications</h2>
-    <h3>2017-2020</h3>
+<!--Work Section-->
+    <a name="work"></a>
+    <div class="container text-center my-5">
+        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info"> Work</span></h1>
+        <div style="font-size:18px;">Projects and Internships done by me</div>
+        <div class="row my-5 pt-3">
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <!-- <img class="card-img-top img-fluid" src="images/project.jpg" alt="project1" height="200px"> -->
+                    <div class="card-body">
+                        <div class="card-title"><h4>Care at Home</h4></div>
+                        <div class="card-text">My First Project</div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <!-- <img class="card-img-top img-fluid" src="images/intern1.jpg" alt="Internship" height="200px"> -->
+                    <div class="card-body">
+                        <div class="card-title"><h4>Web Developer</h4></div>
+                        <div class="card-text">Internship at As Vaidik Pvt Ltd</div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 my-2">
+                <div class="card shadow h-100">
+                    <!-- <img class="card-img-top img-fluid" src="images/intern2.jpg" alt="cauloflower" height="200px"> -->
+                    <div class="card-body">
+                        <div class="card-title"><h4>Technical Trainer</h4></div>
+                        <div class="card-text">Aptech Pvt Ltd</div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="EQ1">
-    <h2>Intermediate(XII)</h2>
-    <h3>2013-2015</h3>
-    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-    </div>
-    <div class="EQ1">
-    <h2>High School(IX)</h2>
-    <h3>2012-2013</h3>
-    <i class="fa fa-book" aria-hidden="true"></i>
-    </div>
-    </div>
-    <div id="slide03"><p class="heading">My Technical Skills</p></div><br>
-    <div class="MTS">
-    <div class="Skills">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" class="skill_image" alt="C">
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png" class="skill_image" alt="java">
-    <span class="Blue_color">♠</span>
-    <span >♠</span>
-    <span >♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" style="height: 93px; width: 100px;" class="skill_image" alt="wordPress">
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    <span >♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" style="height: 94px; width: 95px" alt="HTML"
-    class="skill_image">
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    </div><br><br>
-    <div class="Skills">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" class="skill_image" alt="CSS">
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://images.squarespace-cdn.com/content/v1/5df7d8d44b9a7a49b2e475ac/1576526689110-QJM10YTHVZYU7Z7D2YLE/ke17ZwdGBToddI8pDm48kDmvgM2_GYudIur22MWWiLdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIvFa2r33EMaMk7hlBJBei4G1FTiqzsF6lpp3EXtW1YCk/js-logo.png" class="skill_image" alt="JS">
-    <span class="Blue_color">♠</span>
-    <span >♠</span>
-    <span >♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png" style="width: 100px;" class="skill_image" alt="Bootstrap">
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    <span class="Blue_color">♠</span>
-    </div>
-    <div class="Skills">
-    <img src="https://pngimg.com/uploads/mysql/mysql_PNG29.png" class="skill_image" alt="SQL">
-    <span class="Blue_color">♠</span>
-    <span >♠</span>
-    <span >♠</span>
-    </div>
-    </div>
-    <div class="center" id="slide04">
-        <p class="heading">About Me</p><br>
-    <p class="su"><tt>I am  Sanatan Rastogi from Kanpur, Currently pursuing Masters of Computer Applications(MCA) 1st year, at Jagran Institute of Management. I am passionate towards my work and will make sure that I'll be discipline and dedicated towards my work in every aspect. I'll try my best at my level to productively complete my deliverables in a timely manner. I have ability to cope up with any environment and ability to mingle in groupes and act as a good team player.</tt></p>
-    </div>
-    <div><p class="heading">Contact Me</p></div><br>
-    <footer class="center" id="slide05">
-        <p class="contact">
-            Email : rastogisanatan@gmail.com<br>
-            <i class="fa fa-mobile" aria-hidden="true"></i> Mobile No. : +91 8957467119<br>
-            Linkedin : https://www.linkedin.com/in/sanatanrastogi/
-        </p>
+<!--Footer-->
+    <a name="contact"></a>
+    <footer>
+        <div class="container-fluid text-center" style="background-color: black;" >
+            <div class="py-4" style="font-family: 'Trebuchet MS', sans-serif;">
+                <h2 class="text-light" >Contact Me</h2>
+                <h5 class="text-muted pt-3">Phone No : <span class="text-info">+91 8957467119</span></h5>
+                <h5 class="text-muted">Email : <span class="text-info">rastogisanatan@gmail.com</span></h5>
+            </div>
+            <div>
+                <h5 class="text-light pb-3" style="font-family: 'Trebuchet MS', sans-serif;">My Linkedin profile</h5>
+                <!-- <a href="https://twitter.com/"><i class="fab fa-twitter-square text-light d-block h1"></i></a> -->
+                <a href="https://www.linkedin.com/in/sanatanrastogi"><i class="fab fa-linkedin-in text-light d-block h1"></i></a>
+                <!-- <a href="https://www.facebook.com/"><i class="fab fa-facebook-square text-light d-block h1"></i></a>                     -->
+            </div>
+            <div class="text-muted py-3">
+                <p>Copyright © Sanatan Rastogi 2022</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
