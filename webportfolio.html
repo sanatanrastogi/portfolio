@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Sanatan Rastogi</title>
     <link rel="icon" href="IMG_20211217_092856_430.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,6 +15,15 @@
     <style>
         .scrollbar::-webkit-scrollbar {
             display: none;
+        }
+
+        .zoom {
+            transition: transform .2s; /* Animation */
+        }
+
+        .zoom:hover {
+            transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            z-index: 1;
         }
     </style>
 </head>
@@ -55,7 +64,7 @@
             <div class="col-12 col-md-6">
                 <div class="font-weight-light" style="font-size: 50px;font-family: 'Trebuchet MS', sans-serif;">
                     Hi,<br>I'm <span class="text-info">Sanatan Rastogi</span></div>
-                <h4 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">A Developer</h4>
+                <h4 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">A Full Stack Developer</h4>
             </div>
         </div>
     </div>
@@ -240,7 +249,7 @@
         <div class="row text-center py-5">
             <div class="col-12 col-md-4 pb-3 pb-md-0">
                 <div class="card shadow h-100">
-                    <img class="card-img-top" src="C.jpg" alt="C Intermediate Certificate">
+                    <img class="card-img-top zoom" src="C.jpg" alt="C Intermediate Certificate">
                     <div class="card-body">
                         <div class="card-text">
                             <h4>C Intermediate</h4>
@@ -252,7 +261,7 @@
             </div>
             <div class="col-12 col-md-4 pb-3 pb-md-0">
                 <div class="card shadow h-100">
-                    <img class="card-img-top" src="SQL.jpg" alt="SQl Intermediate Certificate">
+                    <img class="card-img-top zoom" src="SQL.jpg" alt="SQl Intermediate Certificate">
                     <div class="card-body">
                         <div class="card-text">
                             <h4>SQL Intermediate</h4>
@@ -264,7 +273,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card shadow h-100">
-                    <img class="card-img-top" src="CS.jpg" alt="C# Intermediate Certificate">
+                    <img class="card-img-top zoom" src="CS.jpg" alt="C# Intermediate Certificate">
                     <div class="card-body">
                         <div class="card-text">
                             <h4>C# Intermediate</h4>
@@ -274,41 +283,15 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-12 col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <div class="card-text"><h4>Android App Development</h4></div>
-                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">APSSDC, Online</div>
-                        <a href="images/android.png" class="text-info">View Certificate</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <div class="card-text"><h4>Introduction to IoT</h4></div>
-                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">NPTEL, Online</div>
-                        <a href="images/iot.jpeg" class="text-info">View Certificate</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="card shadow h-100">
-                    <div class="card-body">
-                        <div class="card-text"><h4>Java and Python</h4></div>
-                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">Unschool, Online</div>
-                        <a href="images/Java and Python.jpg" class="text-info">View Certificate</a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 
     <!--Work Section-->
     <a name="work"></a>
     <div class="container text-center my-5">
-        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info">
-                Work</span></h1>
+        <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">
+            My<span class="text-info">Work</span>
+        </h1>
         <div style="font-size:18px;">Projects and Internships done by me</div>
         <div class="row my-5 pt-3">
             <div class="col-12 col-md-4 my-2">
