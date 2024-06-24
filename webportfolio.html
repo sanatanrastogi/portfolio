@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanatan Rastogi</title>
-    <link rel="icon" href="IMG_20211217_092856_430.jpg">
+    <link rel="icon" href="IMG_20240530_220216_012.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         .scrollbar::-webkit-scrollbar {
             display: none;
@@ -21,15 +21,15 @@
             transition: transform .2s; /* Animation */
         }
 
-        .zoom:hover {
-            transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-            z-index: 1;
-        }
+            .zoom:hover {
+                transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                z-index: 1;
+            }
     </style>
 </head>
 
 <body>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-sm fixed-top bg-light">
@@ -55,15 +55,16 @@
     <!--Title Section-->
 
     <div class="container">
-        <div class="row text-center align-items-center my-5 py-5">
+        <div class="row text-center align-items-center my-5 py-5" id="Title">
             <div class="col-12 col-md-6">
                 <img class="img-fluid rounded-circle"
-                    src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
-                    alt="Dummyimage" width="300px" height="150px">
+                     src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+                     alt="Dummyimage" width="300" height="150">
             </div>
             <div class="col-12 col-md-6">
                 <div class="font-weight-light" style="font-size: 50px;font-family: 'Trebuchet MS', sans-serif;">
-                    Hi,<br>I'm <span class="text-info">Sanatan Rastogi</span></div>
+                    Hi,<br>I'm <span class="text-info">Sanatan Rastogi</span>
+                </div>
                 <h4 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">A Full Stack Developer</h4>
             </div>
         </div>
@@ -72,14 +73,18 @@
     <!--Education Section-->
     <div class="bg-white w-100">
         <div class="container text-center my-5">
-            <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info">
-                    Education Qualifications</span></h1>
-            <div class="row my-5 pt-3" style="font-family: 'Trebuchet MS', sans-serif;font-size: 16px;">
+            <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">
+                My<span class="text-info">
+                    Education Qualifications
+                </span>
+            </h1>
+            <div class="row my-5 pt-3" style="font-family: 'Trebuchet MS', sans-serif;font-size: 16px;" id="Education">
                 <div class="col-12 col-md-4 my-2">
                     <div>
                         <h3>Masters of Computer Applications</h3>
                     </div>
-                    <div>Jagran Institute of Management<br>
+                    <div>
+                        Jagran Institute of Management<br>
                         Year : 2020-2022<br>
                     </div>
                 </div>
@@ -87,16 +92,17 @@
                     <div>
                         <h3>Bachelor of Computer Applications</h3>
                     </div>
-                    <div>Axis Institute of Higher Education<br>
+                    <div>
+                        Axis Institute of Higher Education<br>
                         Year : 2017-2020<br>
                     </div>
-
                 </div>
                 <div class="col-12 col-md-4 my-2">
                     <div>
                         <h3>Intermediate (XII)</h3>
                     </div>
-                    <div>Prakash Vidya Mandir<br>
+                    <div>
+                        Prakash Vidya Mandir<br>
                         Year : 2014-2015<br>
                     </div>
                 </div>
@@ -109,15 +115,18 @@
     <a name="skills"></a>
     <div class="bg-light w-100 mt-5">
         <div class="container text-center py-5">
-            <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">My<span class="text-info">
-                    Technical Skills</h1>
+            <h1 class="font-weight-light" style="font-family: 'Trebuchet MS', sans-serif;">
+                My<span class="text-info">
+                    Technical Skills
+                </span>
+            </h1>
             <div style="font-size: 18px;">I design, develop and deliver with these weapons</div>
 
             <div class="d-sm-flex justify-content-around my-md-5 py-md-3 mt-4">
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"
-                        alt="C" width="100px" height="100px">
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"
+                         alt="C" width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -126,8 +135,8 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://qph.fs.quoracdn.net/main-qimg-48b7a3d8958565e7aa3ad4dbf2312770.webp" alt="java"
-                        width="100px" height="100px">
+                         src="https://qph.fs.quoracdn.net/main-qimg-48b7a3d8958565e7aa3ad4dbf2312770.webp" alt="java"
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -136,8 +145,8 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png"
-                        alt="wordpress" width="100px" height="100px">
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png"
+                         alt="wordpress" width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -146,7 +155,7 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png" alt="HTML5"
-                        width="100px" height="100px">
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -158,8 +167,8 @@
             <div class="d-sm-flex justify-content-around my-md-5 py-md-3">
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="CSS3"
-                        width="100px" height="100px">
+                         src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="CSS3"
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -168,8 +177,8 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://images.squarespace-cdn.com/content/v1/5df7d8d44b9a7a49b2e475ac/1576526689110-QJM10YTHVZYU7Z7D2YLE/ke17ZwdGBToddI8pDm48kDmvgM2_GYudIur22MWWiLdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIvFa2r33EMaMk7hlBJBei4G1FTiqzsF6lpp3EXtW1YCk/js-logo.png"
-                        alt="javascript" width="100px" height="100px">
+                         src="https://images.squarespace-cdn.com/content/v1/5df7d8d44b9a7a49b2e475ac/1576526689110-QJM10YTHVZYU7Z7D2YLE/ke17ZwdGBToddI8pDm48kDmvgM2_GYudIur22MWWiLdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIvFa2r33EMaMk7hlBJBei4G1FTiqzsF6lpp3EXtW1YCk/js-logo.png"
+                         alt="javascript" width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -178,7 +187,7 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded" src="https://miro.medium.com/max/320/0*_rAD9NgK7l6KSlNc.png" alt="bootstrap4"
-                        width="100px" height="100px">
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -187,7 +196,7 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded" src="https://img.icons8.com/color/480/microsoft-sql-server.png" alt="mssql"
-                        width="100px" height="100px">
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -199,8 +208,8 @@
             <div class="d-sm-flex justify-content-around my-md-5 py-md-3">
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"
-                        alt="C++" width="100px" height="100px">
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"
+                         alt="C++" width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -209,7 +218,7 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded" src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="React"
-                        width="100px" height="100px">
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span>★</span>
@@ -218,8 +227,8 @@
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
                     <img class="rounded"
-                        src="https://www.kindpng.com/picc/m/11-118738_php-logo-png-circle-transparent-png.png" alt="php"
-                        width="100px" height="100px">
+                         src="DotNet.png" alt="Dot Net"
+                         width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span>★</span>
@@ -227,8 +236,7 @@
                     </div>
                 </div>
                 <div class="mb-md-0 mb-sm-0 mb-3">
-                    <img class="rounded" src="https://cdn.cdnlogo.com/logos/c/27/c.svg" alt="c#" width="100px"
-                        height="100px">
+                    <img class="rounded" src="https://cdn.cdnlogo.com/logos/c/27/c.svg" alt="c#" width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
                         <span class="text-info">★</span>
@@ -242,12 +250,13 @@
     <!--Certification Section-->
 
     <a name="certifications"></a>
-    <h1 class="font-weight-light text-center my-3 pt-5" style="font-family: 'Trebuchet MS', sans-serif;">My<span
-            class="text-info"> Certification Courses</span></h1>
+    <h1 class="font-weight-light text-center my-3 pt-5" style="font-family: 'Trebuchet MS', sans-serif;">
+        My<span class="text-info"> Certification Courses</span>
+    </h1>
     <div style=" font-size: 18px; text-align: center;">My knowledge accredited by certifications</div>
     <div class="container">
-        <div class="row text-center py-5">
-            <div class="col-12 col-md-4 pb-3 pb-md-0">
+        <div class="row text-center">
+            <div class="col-12 col-md-4 py-5">
                 <div class="card shadow h-100">
                     <img class="card-img-top zoom" src="C.jpg" alt="C Intermediate Certificate">
                     <div class="card-body">
@@ -259,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 pb-3 pb-md-0">
+            <div class="col-12 col-md-4 py-5">
                 <div class="card shadow h-100">
                     <img class="card-img-top zoom" src="SQL.jpg" alt="SQl Intermediate Certificate">
                     <div class="card-body">
@@ -271,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 py-5">
                 <div class="card shadow h-100">
                     <img class="card-img-top zoom" src="CS.jpg" alt="C# Intermediate Certificate">
                     <div class="card-body">
@@ -280,6 +289,42 @@
                         </div>
                         <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">sololearn</div>
                         <a href="CS.pdf" class="text-info" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 py-5">
+                <div class="card shadow h-100">
+                    <img class="card-img-top zoom" src="CS.jpg" alt="JavaScript Intermediate Certificate">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h4>JavaScript Intermediate</h4>
+                        </div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">sololearn</div>
+                        <a href="JavaScript.pdf" class="text-info" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 py-5">
+                <div class="card shadow h-100">
+                    <img class="card-img-top zoom" src="SQL_HR.jpg" alt="SQl Intermediate Certificate">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h4>SQL Intermediate</h4>
+                        </div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">HackerRank</div>
+                        <a href="SQL_HR.pdf" class="text-info" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 py-5">
+                <div class="card shadow h-100">
+                    <img class="card-img-top zoom" src="problem_solving_basic.jpg" alt="problem solving basic Certificate">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h4>SQL Intermediate</h4>
+                        </div>
+                        <div class="card-text " style="font-family: 'Trebuchet MS', sans-serif;">HackerRank</div>
+                        <a href="problem_solving_basic.pdf" class="text-info" target="_blank">View Certificate</a>
                     </div>
                 </div>
             </div>
@@ -334,8 +379,11 @@
     <a name="about"></a>
     <div class="bg-light my-5">
         <div class="container text-center py-5">
-            <h1 class="font-weight-light"><span class="text-info" style="font-family: 'Trebuchet MS', sans-serif;">About
-                </span>me</h1>
+            <h1 class="font-weight-light">
+                <span class="text-info" style="font-family: 'Trebuchet MS', sans-serif;">
+                    About
+                </span>me
+            </h1>
             <div style="font-size: 18px; text-align: center;">What I'm, A short description about me</div>
             <div class="row pt-5 pl-5 pr-5" style="font-family: 'Trebuchet MS', sans-serif;">
                 <p class="text-justify">
@@ -347,7 +395,7 @@
                     situation, work well with others in groups, and adapt to any situation.
                 </p>
                 <p class="text-justify">
-                    <b>✓ </b>My area of expertise is full stack development. I have experience working on multiple
+                    <b>✓ </b>My area of expertise is .Net full stack development. I have experience working on multiple
                     projects with various technologies, and I also have strong communication & leadership skills.
                 </p>
             </div>
@@ -363,12 +411,11 @@
                 </div>
                 <div class="col-7 col-sm-6 text-right text-light">
                     <p class="text-muted">
-                        <a href="tel:+918957467119" target="_blank">+91 8957467119</a></span><br>
+                        <a href="tel:+918957467119" target="_blank">+91 8957467119</a><br>
                         <a href="mailto:rastogisanatan@gmail.com" target="_blank">rastogisanatan@gmail.com</a>
                     </p>
                 </div>
                 <div class="col-5 col-sm-6 text-left" style="padding-top: 0.4rem;">
-                    <!-- <h5 class="text-light">Social Medial Links</h5> -->
                     <a href="https://www.linkedin.com/in/sanatanrastogi" target="_blank">
                         <i class="fab fa-linkedin-in text-light h1"></i>
                     </a>
@@ -406,6 +453,22 @@
             setTimeout(clock, 1000);
         };
         clock();
+
+        // Flag variable to track if scroll event has occurred
+        var hasScrolled = false;
+
+        $(document).ready(function () {
+            if (!hasScrolled) {
+                $('#Education').addClass('animate__animated');
+                $('#Education').addClass('animate__slideInUp');
+
+                // Set the flag to true so this block doesn't run again
+                hasScrolled = true;
+            } else {
+                $('#Education').removeClass('animate__animated');
+                $('#Education').removeClass('animate__slideInUp');
+            }
+        });
     </script>
 </body>
 
