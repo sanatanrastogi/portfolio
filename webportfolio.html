@@ -14,9 +14,6 @@
     <title>Sanatan Rastogi</title>
     <link rel="icon" href="IMG_20240530_220216_012.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
@@ -39,13 +36,12 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-sm fixed-top bg-light">
         <div class="container my-2">
             <a href="#" class="navbar-brand text-dark font-weight-bold">Sanatan Rastogi</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav" aria-label="navebar toggler">
                 <span class="fas fa-bars text-dark"></span>
             </button>
             <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
@@ -70,7 +66,7 @@
             <div class="col-12 col-md-6">
                 <img class="img-fluid rounded-circle"
                      src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
-                     alt="profile image" width="300" height="150">
+                     alt="Profile photo placeholder — Sanatan Rastogi" width="300" height="150">
             </div>
             <div class="col-12 col-md-6">
                 <div class="font-weight-light fontStyle" style="font-size: 50px;">
@@ -123,8 +119,7 @@
 
     <!--Technical Skills-->
 
-    <a name="skills"></a>
-    <div class="bg-light w-100 mt-5">
+    <div id="skills" class="bg-light w-100 mt-5">
         <div class="container text-center py-5">
             <h1 class="font-weight-light fontStyle">
                 My<span class="text-info">
@@ -157,7 +152,7 @@
                          width="100" height="100">
                     <div class="text-center">
                         <span class="text-info">★</span>
-                        <span>★</span>
+                        <span class="text-info">★</span>
                         <span>★</span>
                     </div>
                 </div>
@@ -260,8 +255,7 @@
 
     <!--Certification Section-->
 
-    <a name="certifications"></a>
-    <h1 class="font-weight-light text-center my-3 pt-5 fontStyle">
+    <h1 id="certifications" class="font-weight-light text-center my-3 pt-5 fontStyle">
         My<span class="text-info"> Certification Courses</span>
     </h1>
     <div style=" font-size: 18px; text-align: center;">My knowledge accredited by certifications</div>
@@ -354,8 +348,7 @@
         </div>
     </div>
     <!--Experience-->
-    <a name="experience" />
-    <div class="container text-center my-5">
+    <div id="experience" class="container text-center my-5">
         <h1 class="font-weight-light fontStyle">
             My <span class="text-info"> Experience</span>
         </h1>
@@ -394,8 +387,7 @@
         </div>
     </div>
     <!--Work Section-->
-    <a name="work" />
-    <div class="container text-center my-5">
+    <div id="work" class="container text-center my-5">
         <h1 class="font-weight-light fontStyle">
             My <span class="text-info"> Work</span>
         </h1>
@@ -438,8 +430,7 @@
     </div>
 
     <!--About me Section-->
-    <a name="about"></a>
-    <div class="bg-light my-5">
+    <div id="about" class="bg-light my-5">
         <div class="container text-center py-5">
             <h1 class="font-weight-light">
                 <span class="text-info fontStyle">
@@ -459,8 +450,7 @@
         </div>
     </div>
     <!--Footer-->
-    <a name="contact"></a>
-    <footer>
+    <footer id="contact">
         <div class="container-fluid text-center" style="background-color: black;">
             <div class="row pt-4">
                 <div class="col-12 pb-2">
@@ -473,13 +463,13 @@
                     </p>
                 </div>
                 <div class="col-5 col-sm-6 text-left" style="padding-top: 0.4rem;">
-                    <a href="https://www.linkedin.com/in/sanatanrastogi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/sanatanrastogi" target="_blank" rel="noopener noreferrer" aria-label="Sanatan Rastogi's Linkedin Account">
                         <i class="fab fa-linkedin-in text-light h1"></i>
                     </a>
-                    <a href="https://learn.microsoft.com/en-us/users/sanatanrastogi-0881/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://learn.microsoft.com/en-us/users/sanatanrastogi-0881/" target="_blank" rel="noopener noreferrer" aria-label="Sanatan Rastogi's microsoft learn Account">
                         <i class="fab fa-microsoft text-light h1 pl-3"></i>
                     </a>
-                    <a href="https://github.com/sanatanrastogi/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sanatanrastogi/" target="_blank" rel="noopener noreferrer" aria-label="Sanatan Rastogi's GitHub Account">
                         <i class="fab fa-github text-light h1 pl-3"></i>
                     </a>
                 </div>
@@ -489,7 +479,12 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+    <!-- Load JS libraries in order: jQuery → Popper → Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
     <script>
         let clock = () => {
             let date = new Date();
